@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript">	
+			function getQuerystring(paramName){
+				var Url = window.location.search.substring(1); //url에서 처음부터 '?'까지 삭제
+				var array = Url.split('&'); // '&'을 기준으로 분리하기
+				for(var i = 0; array.length; i++) {
+					var keyValuePair = array[i].split('='); // '=' 을 기준으로 분리하기
+		
+					if(keyValuePair[0] == paramName){ // _keyValuePair[0] : 파라미터 명
+					// _keyValuePair[1] : 파라미터 값
+					return keyValuePair[1];
+					}
+				}
+			}
+			
+		</script>
+		<title>Travel To</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div id="ticket-box">
+			<div id="From"><img src="images/from.png"></div>
+			<div id="To"><img src="images/to.png"></div>
+			<div id="departure"></div>
+			<div id="arrive"></div>
+			<div id="centerline"><img src="images/center_line.png"></div>
+			<div id="time"></div>
+			<div id="Plane"><img src="images/plane.png"></div>
+			<div id="top-line"><img src="images/topline.png"></div>
+			<div id="bottom-line"><img src="images/bottom.png"></div>
+		</div>
+		<script>
+			document.getElementById("departure").innerHTML = decodeURIComponent(getQuerystring("departure"));
+			document.getElementById("arrive").innerHTML = decodeURIComponent(getQuerystring("arrive"));
+			document.getElementById("time").innerHTML = decodeURIComponent(getQuerystring("time"));
+		</script>
+ </body>
+ </html>

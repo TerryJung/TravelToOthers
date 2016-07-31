@@ -1,0 +1,123 @@
+ @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #ticket-box 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 820px;
+	 height: 400px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #layer_1 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 820px;
+	 height: 400px;
+	 z-index:1;
+} 
+
+ #From 
+{ 
+	 left: 617px; 
+	 top: 72px; 
+	 position: absolute; 
+	 width: 66px;
+	 height: 21px;
+	 z-index:2;
+} 
+
+ #To 
+{ 
+	 left: 618px; 
+	 top: 306px; 
+	 position: absolute; 
+	 width: 31px;
+	 height: 21px;
+	 z-index:3;
+} 
+
+ #departure { 
+	font-size: 30pt;
+	font-family: "Jeju Gothic";
+	color: rgb(51, 215, 209);
+	left: 209px; 
+	top: 57px; 
+	position: absolute; 
+	height: 39px;
+	z-index:4;
+} 
+
+ #arrive 
+{ 
+	font-size: 30pt;
+	font-family: "Jeju Gothic";
+	color: rgb(51, 215, 209);
+	left: 209px; 
+	top: 288px; 
+	position: absolute; 
+	height: 39px;
+	z-index:5;
+} 
+
+ #centerline 
+{ 
+	 left: 204px; 
+	 top: 191px; 
+	 position: absolute; 
+	 width: 379px;
+	 height: 7px;
+	 z-index:6;
+} 
+
+ #time 
+{ 
+	font-size: 16pt;
+	font-family: "Jeju Gothic";
+	color: rgb(167, 167, 167);
+	left: 620px; 
+	top: 193px; 
+	position: absolute; 
+	height: 13px;
+	z-index:7;
+} 
+
+ #Plane 
+{ 
+	 left: 62px; 
+	 top: 141px; 
+	 position: absolute; 
+	 width: 98px;
+	 height: 98px;
+	 z-index:8;
+} 
+
+ #top-line 
+{ 
+	 left: 106px; 
+	 top: 52px; 
+	 position: absolute; 
+	 width: 10px;
+	 height: 88px;
+	 z-index:9;
+} 
+
+ #bottom-line
+{ 
+	 left: 106px; 
+	 top: 244px; 
+	 position: absolute; 
+	 width: 10px;
+	 height: 88px;
+	 z-index:10;
+} 
