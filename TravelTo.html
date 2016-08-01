@@ -21,12 +21,14 @@
 					}
 				}
 			}
+			var link =  document.location.href; // get URL 
 			
 		</script>
-		<title>Travel To</title>
-		<link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css">
+		<title>Travel To Another</title>
+		
 	</head>
 	<body>
+	<link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css">
 		<div id="ticket-box" style="left: 0px, top: 0px; position: relative; width: 820px; height: 400px; overflow: hidden">
 			<div id="From" style="left: 617px; top: 72px; position: absolute; width: 66px; height: 21px"><img src="images/from.png"></div>
 			<div id="To" style="left: 618px; top: 306px; position: absolute; width: 31px; height: 21px"><img src="images/to.png"></div>
@@ -35,8 +37,8 @@
 			<div id="centerline" style="left: 204px; top: 191px; position: absolute; width: 379px; height: 7px"><img src="images/center_line.png"></div>
 			<div id="time" style="font-size: 16pt;	font-family: 'Jeju Gothic';	color: rgb(167, 167, 167); left: 620px; top: 193px; position: absolute; height: 13px"></div>
 			<div id="Plane" style="left: 62px; top: 141px; position: absolute; width: 98px; height: 98px"><img src="images/plane.png"></div>
-			<div id="top-line" style="left: 106px; top: 52px; position: absolute; width: 10px; height: 88px><img src="images/topline.png"></div>
-			<div id="bottom-line" style="left: 106px; top: 244px; position: absolute; width: 10px; height: 88px><img src="images/bottom.png"></div>
+			<div id="top-line" style="left: 106px; top: 52px; position: absolute; width: 10px; height: 88px"><img src="images/topline.png"></div>
+			<div id="bottom-line" style="left: 106px; top: 244px; position: absolute; width: 10px; height: 88px"><img src="images/bottom.png"></div>
 		</div>
 		<script>
 			document.getElementById("departure").innerHTML = decodeURIComponent(getQuerystring("departure"));
