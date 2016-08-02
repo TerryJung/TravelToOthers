@@ -2,12 +2,12 @@
 <html charset="utf-8">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<!-- Bootstrap -->
+		<!-- Bootstrap 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- JQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript></script>
+		<!-- JQuery 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript></script>-->
 		<script type="text/javascript">	
 			function getQuerystring(paramName){
 				var Url = window.location.search.substring(1); //url에서 처음부터 '?'까지 삭제
@@ -21,22 +21,24 @@
 					}
 				}
 			}
+			var link =  document.location.href; // get URL 
 			
 		</script>
-		<title>Travel To</title>
-		<link href="styles.css" rel="stylesheet" type="text/css">
+		<title>Travel To Another</title>
+		
 	</head>
 	<body>
-		<div id="ticket-box">
-			<div id="From"><img src="images/from.png"></div>
-			<div id="To"><img src="images/to.png"></div>
-			<div id="departure"></div>
-			<div id="arrive"></div>
-			<div id="centerline"><img src="images/center_line.png"></div>
-			<div id="time"></div>
-			<div id="Plane"><img src="images/plane.png"></div>
-			<div id="top-line"><img src="images/topline.png"></div>
-			<div id="bottom-line"><img src="images/bottom.png"></div>
+	<link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css">
+		<div id="ticket-box" style="left: 0px, top: 0px; position: relative; width: 820px; height: 400px; overflow: hidden">
+			<div id="From" style="left: 617px; top: 72px; position: absolute; width: 66px; height: 21px"><img src="images/from.png"></div>
+			<div id="To" style="left: 618px; top: 306px; position: absolute; width: 31px; height: 21px"><img src="images/to.png"></div>
+			<div id="departure" style="font-size: 30pt; font-family: 'Jeju Gothic'; color: rgb(51, 215, 209); left: 209px; top: 57px; position: absolute; height: 39px"></div>
+			<div id="arrive" style="	font-size: 30pt; font-family: 'Jeju Gothic'; color: rgb(51, 215, 209); left: 209px;	top: 288px;	position: absolute;	height: 39px"></div>
+			<div id="centerline" style="left: 204px; top: 191px; position: absolute; width: 379px; height: 7px"><img src="images/center_line.png"></div>
+			<div id="time" style="font-size: 16pt;	font-family: 'Jeju Gothic';	color: rgb(167, 167, 167); left: 620px; top: 193px; position: absolute; height: 13px"></div>
+			<div id="Plane" style="left: 62px; top: 141px; position: absolute; width: 98px; height: 98px"><img src="images/plane.png"></div>
+			<div id="top-line" style="left: 106px; top: 52px; position: absolute; width: 10px; height: 88px"><img src="images/topline.png"></div>
+			<div id="bottom-line" style="left: 106px; top: 244px; position: absolute; width: 10px; height: 88px"><img src="images/bottom.png"></div>
 		</div>
 		<script>
 			document.getElementById("departure").innerHTML = decodeURIComponent(getQuerystring("departure"));
