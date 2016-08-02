@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<script type="text/javascript">	
+		
 			function nextpage() {
 				
 				window.location.href = "TravelTo.html?departure="+encodeURIComponent(document.forms.TicketInfo.departure.value)+
@@ -37,19 +38,22 @@
 			<div class="starter-template">
 				<h1>Do your travel a visual way to display.</h1>
 				<p class="lead">본인이 여행하며 이용한 교통수단을 비주얼하게 나타내보세요.<br></p>
+				<img src="images/preview.png">
+				<div class="input-information">
+					<form name="TicketInfo">
+
+					<input type="text" id="departure" class="form-control" placeholder="출발지" required autofocus>
+					<input type="text" name="arrive" class="form-control" placeholder="도착지" required>
+					<input type="text" name="time" class="form-control" placeholder="걸린시간" required>
+					<input type="button" onClick="nextpage()" class="btn btn-lg btn-primary btn-block" value="HTML가져오기">
+				</div>
 			</div>
 		</div><!-- /.container -->
-		<div class="container">
-			<div class="input-information">
-				<form name="TicketInfo">
-
-				<input type="text" id="departure" class="form-control" placeholder="출발지" required autofocus>
-				<input type="text" name="arrive" class="form-control" placeholder="도착지" required>
-				<input type="text" name="time" class="form-control" placeholder="걸린시간" required>
-				<input type="button" onClick="nextpage()" class="btn btn-lg btn-primary btn-block" value="HTML가져오기">
-			</div>
+		
+		<div class="form-group">
+			<label for="comment">HTML:</label>
+			<textarea class="form-control" rows="8" id="comment"></textarea>
 		</div>
-
 		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<!-- JQuery -->

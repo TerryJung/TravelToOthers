@@ -17,3 +17,8 @@ body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+.form-group {
+	max-width: 800px;
+	margin: 0 auto;
+}
