@@ -2,29 +2,64 @@
 <html charset="utf-8">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<!-- Bootstrap
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Do your travel a visual way to display.">
+		<meta name="author" content="Terry Jung">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- JQuery
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript></script> -->
 		<script type="text/javascript">	
+		
 			function nextpage() {
 				
 				window.location.href = "TravelTo.html?departure="+encodeURIComponent(document.forms.TicketInfo.departure.value)+
 				"&arrive="+document.forms.TicketInfo.arrive.value+"&time="+document.forms.TicketInfo.time.value+""
 
 			}
+
+			
 		</script>
 		
-		<title>Travel To</title>
+		<title>Travel To Another</title>
 		<link href="styles.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<form name="TicketInfo">
-		<INPUT TYPE="text" name="departure" size="5" value="">
-		<INPUT TYPE="text" name="arrive" size="5" value="">
-		<INPUT TYPE="text" name="time" size="5" value="">
-		<INPUT TYPE="button" onClick="nextpage()" value="Go to the next page">
- </body>
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Travel To Another</a>
+				</div>
+			</div>
+		</nav>
+	    <div class="container">
+			<div class="starter-template">
+				<h1>Do your travel a visual way to display.</h1>
+				<p class="lead">본인이 여행하며 이용한 교통수단을 비주얼하게 나타내보세요.<br></p>
+				<img src="images/preview.png">
+				<div class="input-information">
+					<form name="TicketInfo" action="TravelTo.html" method="get">
+
+					<input type="text" name="departure" class="form-control" placeholder="출발지" required autofocus>
+					<input type="text" name="arrive" class="form-control" placeholder="도착지" required>
+					<input type="text" name="time" class="form-control" placeholder="걸린시간" required>
+					<input type="submit" value="HTML가져오기" class="btn btn-lg btn-primary btn-block">
+				</div>
+			</div>
+		</div><!-- /.container -->
+		
+		<div class="form-group">
+			<label for="comment">HTML:</label>
+			<textarea class="form-control" rows="8" id="comment"></textarea>
+		</div>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript></script> -->
+				
+	</body>
  </html>
