@@ -48,13 +48,13 @@
 			var departure = $('#departure').val();
 			var arrive = $('#arrive').val();
 			var time = $('#time').val();
+			var title = departure + '부터 ' + arrive +'까지 ' + time + '의 여정';
 			var fontFamilyJeju = "font-family: 'Jeju Gothic';"
-			var htmlString = '<link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css"><div id="ticket-box" style="left: 0px, top: 0px; position: relative; width: 820px; height: 400px; overflow: hidden"><div id="From" style="left: 617px; top: 72px; position: absolute; width: 66px; height: 21px"><img src="https://chil-chil.github.io/TravelToOthers/images/from.png"></div><div id="To" style="left: 618px; top: 306px; position: absolute; width: 31px; height: 21px"><img src="https://chil-chil.github.io/TravelToOthers/images/to.png">'
+			var htmlString = '<link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" type="text/css"><div id="ticket-box" title="'+title+'" style="left: 0px, top: 0px; position: relative; width: 820px; height: 400px; overflow: hidden"><div id="From" style="left: 617px; top: 72px; position: absolute; width: 66px; height: 21px"><img src="https://chil-chil.github.io/TravelToOthers/images/from.png"></div><div id="To" style="left: 618px; top: 306px; position: absolute; width: 31px; height: 21px"><img src="https://chil-chil.github.io/TravelToOthers/images/to.png">'
 			+'</div><div id="departure" style="'+fontFamilyJeju+' font-size: 30pt; color: rgb(51, 215, 209); left: 209px; top: 57px; position: absolute; height: 39px">'
 			+ departure +'</div><div id="arrive" style="'+fontFamilyJeju+' font-size: 30pt; color: rgb(51, 215, 209); left: 209px;	top: 288px;	position: absolute;	height: 39px">'
 			+ arrive +'</div><div id="centerline" style="left: 204px; top: 191px; position: absolute; width: 379px; height: 7px"><img src="https://chil-chil.github.io/TravelToOthers/images/center_line.png"></div><div id="time" style="'+fontFamilyJeju+' font-size: 16pt; color: rgb(167, 167, 167); left: 620px; top: 180px; position: absolute; height: 13px">'
-			+ time +'</div><div id="Plane" style="left: 62px; top: 141px; position: absolute; width: 98px; height: 98px"><img src="https://chil-chil.github.io/TravelToOthers/images/plane.png"></div><div id="top-line" style="left: 106px; top: 52px; position: absolute; width: 10px; height: 88px"><img src="https://chil-chil.github.io/TravelToOthers/images/topline.png"></div><div id="bottom-line" style="left: 106px; top: 244px; position: absolute; width: 10px; height: 88px"><img src="https://chil-chil.github.io/TravelToOthers/images/bottom.png"></div></div>';
-			$("#to").val(htmlString);
+			+ time +'</div><div id="Plane" style="left: 62px; top: 141px; position: absolute; width: 98px; height: 98px"><img src="https://chil-chil.github.io/TravelToOthers/images/plane.png"></div><div id="top-line" style="left: 106px; top: 52px; position: absolute; width: 10px; height: 88px"><img src="https://chil-chil.github.io/TravelToOthers/images/topline.png"></div><div id="bottom-line" style="left: 106px; top: 244px; position: absolute; width: 10px; height: 88px"><img src="https://chil-chil.github.io/TravelToOthers/images/bottom.png"></div></div>';			$("#to").val(htmlString);
 		});
 		</script>
 		<div class="form-group">
